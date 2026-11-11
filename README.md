@@ -29,7 +29,7 @@ Maintains state trackers (.csv) directly in ADLS Gen2 to allow idempotent pipeli
 
 In-Memory Zero-Copy Transformation (DuckDB):
 Eliminates the need to download large cloud datasets to disk by querying raw JSON structures in memory via DuckDB.   
-Computes spatial features on the fly: Euclidean distance ($d = \frac{\sqrt{x^2 + y^2}}{10}$), shot angles in radians ($\theta = \text{atan2}(y, x)$), and quarter time remaining.   
+Computes spatial features on the fly: Euclidean distance ($d = \frac{\sqrt{x^2 + y^2}}{10}$), shot angles in radians , and quarter time remaining.   
 
 ACID Delta Lake Integration:
 Converts engineered tabular datasets into transactional Delta Lake tables with schema merging and automated batch-processing capabilities across entire seasons.   
